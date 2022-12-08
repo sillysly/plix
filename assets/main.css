@@ -1285,8 +1285,7 @@ button {
     left:-30px;
     z-index:-1;
     animation: levitate1 7s alternate infinite;
-    width:950px;
-    
+    /* width:950px; */
 }
 
 .content4 UL {
