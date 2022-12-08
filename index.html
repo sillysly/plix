@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" id="favicon" href="./assets/resource//favicon1.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>plix for steam</title>
+</head>
+<body>
+    <style>
+        body {
+            overflow-y:hidden;
+        }
+    </style>
+    <img id="cursor" src="./assets/resource/pointer.png" alt="">
+
+    <div id="ttipcontainer">
+        <div id="ttiparrow"></div>
+        <div id="ttip"> 
+            <h4 id="ttiptext">PLACEHOLDER</h4>
+        </div>
+    </div>
+
+   
+
+    <div id="preloader">
+        <img src="./assets/resource/logo1.png" alt="">
+        <div class="progressbar"></div>
+        <div class="circles">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+        
+        
+    </div>
+    <div id="overlay"></div>
+    <canvas id="bgcanvas"></canvas> 
+    <canvas id="fgcanvas"> </canvas> 
+
+    <div id="modal_container">
+        <div id="modal">
+            <img id="modalclose"src="./assets/resource/close.png" alt="">
+            <h1>YOU'RE ALMOST THERE!  &#129321</h1>
+            <p>
+                Visit the patreon page and become a patron to get access to the skin and our Discord Server. You can also give leave me a tip on kofi.
+            </p>
+                <div class="iconsmodal">
+                    <a onmouseover="kofittip()" href="https://ko-fi.com/sillysly" 
+                    target="_blank" > 
+                        <img  class="Kofi" data-tilt
+                             src="./assets/resource/plix kofi logo.png" 
+                            alt="plix KOFI LOGO"/>
+                    </a>   
+                    <span class="iconspacing" ></span>
+                    <a href="https://www.patreon.com/PlixForSteam"
+                    target="_blank">
+                        <img class="Patreon" data-tilt
+                            src="./assets/resource/plix patreon logo.png"
+                            alt="plix GITHUB LOGO"
+                             />
+                    </a>
+                </a>
+                <span class="iconspacing"></span>
+                <a href="https://www.patreon.com/PlixForSteam"
+                target="_blank">
+                    <img class="Discord" data-tilt src="./assets/resource/plix discord logo.png" alt="PLIX DISCORD LOGO" />
+                </a>
+                </div>
+        </div>
+    </div>
+ 
+       
+    </div>
+    
+  <section id="sec-0">
+    <header class="header" data-aos="fade-down">
+        <div class="logo_container">
+            <a href="#">
+                <img id="logo"src="./assets/resource/logo1.png" alt="" data-tilt >
+                <h2 id="sitename">PLIX</h2>
+            </a>
+            
+        </div>
+    
+    
+        <div class="navigation">
+            <input type="checkbox" id="toggle-menu">
+            <div class="hamburger"></div>
+    
+            <ul id="menu">
+                <a href="#"><button id="button3">DOWNLOAD</button></a>
+                
+              
+                <button id="button1">HOW TO INSTALL</button>
+                <button id="button2">EXTRAS</button>
+            </ul>
+    
+        </div>
+    
+    </header>
+  </section> 
+  
+  
+            <div class="content1"   >
+                <div class="main" >
+                    <div class="blobcontainer">
+                        <video id="blob" src="./assets/resource/blob.webm" loop muted autoplay></video>
+                    </div>
+                    <video id="char1" src="./assets/resource/char1.webm"muted></video>
+                        <video id="char2" src="./assets/resource/char2.webm"muted></video>
+                        
+                        <img id="mainarrow" src="./assets/resource/pointer.png" alt="">
+
+                        <div class="mainimgcontainer" data-tilt>             
+                        <img id="lightclient" src="./assets/resource/1light.png" alt="" />
+                        <img id="darkclient"  src="./assets/resource/1dark.png" alt="" />
+                        </div>
+
+                    </div>
+                      
+                </div>
+
+            <section id="sec-2">
+                    <div class="content2">
+                        <h4 id="con2h41">
+                            PLIX is a the most beautiful skin for steam that modernizes the whole
+                            steam client.
+                        </h4>
+                            <h4 id="con2h42">
+                                A new look for the platform you already know and love.
+                                plix is fresh and exciting from the moment you open
+                                Steam.
+                            </h4>
+                        <div id="button5bg"></div>
+                            <button id="button5"></button>
+                     </div>
+            </section>
+
+
+            <section id="sec-3">
+                <div class="content3"   data-aos="fade-down">
+                    <span class="divider"></span>
+                        <h2>HOW TO INSTALL</h2>
+                        
+                        <img class="shape1" src="./assets/resource/shape1.png" alt="">
+                        <img class="shape2" src="./assets/resource/shape2.png" alt="">
+                        <div class="steps">
+                            <ul><li>
+                                Move plix (Light) or plix (Dark) folder to steam/skins/
+                            </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    go to FONTS folder and install all the fonts there
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Pick an extra that you like from the EXTRAS folder and paste the layout file
+                                    in resource/layout (replace the file)
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    On steam go to settings -> interface and choose the newly added skin, Steam
+                                    will have to restart to apply the skin
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Install                         
+                                    <a href="https://github.com/PhantomGamers/SFP" target="_blank"
+                                      >https://github.com/PhantomGamers/SFP</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    take the libraryrootcustom.css file and paste it on steam/steamui/
+                                </li>
+                                
+                            </ul>
+                            <ul>
+                                <li>
+                                    take the friends.custom.css file and paste it on steam/clientui/
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    open steamfriendspatcher and it will apply the library skin
+                                </li>
+                            </ul>
+                    </div>
+                   
+                </div>
+            </section>
+           
+
+            <section id="sec-4">
+                <div class="content4"   data-aos="fade-down">
+                    <span class="divider"></span>
+                    <h2>EXTRAS</h2>
+                    <div class="inner_content4">
+                 
+                   
+                        <div class="extras">
+                            <ul><li>Announcement button</li></ul>
+                            <ul><li>Rounded border on avatar</li></ul>
+                            <ul><li>Rounded  border on avatar with balance</li></ul>
+                            <ul><li>Rounded avatar with colored background on username</li></ul>
+                            <ul><li>Rounded avatar with colored background on username with balance</li></ul>
+                        </div>
+               
+                            <div class=extrasbg>
+                                <video src="./assets/resource/1extras.webm" loop muted autoplay></video>
+                            </div>
+                    </div>
+             
+                </div>
+            </section>
+
+         
+
+            <section id="sec-6">
+                <div class="content6"   data-aos="fade-down">
+                    <span class="divider"></span>
+                    <img class="shape3" src="./assets/resource/shape4.png" alt="">
+                    <img class="shape4" src="./assets/resource/shape3.png" alt="">
+
+                        <h2>TESTIMONIALS</h2>         
+                        
+                        <div class="testimonials_container">
+                            <div class="CARD">
+                                <img src="./assets/resource/reddituser1.png" alt="">
+                                <h3>tzf1003</h3>
+                                <p>"I like this"</p>
+                        </div>
+
+                        <div class="CARD1">
+                            <img src="./assets/resource/reddituser2.png" alt="">
+                            <h3>XE7_Hades</h3>
+                            <p>"Black version looks clean as hell, what I always wanted from a steam skin just the bare minimum and no extra bars or boxes that do nothing but add clutter."</p>
+                    </div>
+
+                    <div class="CARD">
+                        <img src="./assets/resource/GoldRust.png" alt="">
+                        <h3>GoldRust</h3>
+                        <p>"My. God....It's PERFECT!"</p>
+                </div>
+
+                </div>  
+                   
+                </div>
+            </section>
+    
+            <section id="sec-8">
+                <div class="content8"  data-aos="fade-down"  >
+                    <span class="divider"></span>       
+                        <h2>DOWNLOAD</h2>
+                        <p>Visit the patreon page and become a patron to get access to the skin and our Discord Server. You can also give leave me a tip on kofi.</p>
+                        <div class="icons">
+                            <a href="https://ko-fi.com/sillysly"
+                            target="_blank">
+                                <img class="Kofi" data-tilt
+                                    src="./assets/resource/plix kofi logo.png"
+                                    alt="PLIX KOFI LOGO"/>
+                            </a>   
+                            <span class="iconspacing" ></span>
+                            <a href="https://www.patreon.com/PlixForSteam"
+                            target="_blank">
+                                <img  class="Patreon" data-tilt
+                                    src="./assets/resource/plix patreon logo.png"
+                                    alt="PLIX GITHUB LOGO"
+                                     />
+                            </a>
+                            <span class="iconspacing"></span>
+                            <a href="https://www.patreon.com/PlixForSteam"
+                            target="_blank">
+                                <img  class="Discord" data-tilt src="./assets/resource/plix discord logo.png" alt="PLIX DISCORD LOGO" />
+                            </a>
+                        </div>
+                </div>
+            </section>
+
+            <section id="sec-9">
+                <div class="content9"   data-aos="fade-down">
+                    <span class="divider"></span>
+                        <h2>CREDITS</h2>
+
+                        <div class="credits">
+                   
+                            <ul><li>
+                                <a href="https://github.com/minischetti"target="_blank">Dominic Minischetti III</a>
+                            </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/airforsteam"target="_blank">AIR SKIN</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/PhantomGamers"target="_blank">PHANTOMGAMERS</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/redsigma"target="_blank">REDSIGMA</a>
+                                    
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/Jonius7"target="_blank">JONIUS7</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/AikoMidori"target="_blank">SHIINA</a>
+                                </li>
+                            </ul>
+                            
+                            
+                    </div>
+               
+                </div>
+            </section>
+
+            <div id="footer">
+                <h4 class="copyright"></h4>
+                <button id="button4"><img src="./assets/resource/scrolltotop.png" alt=""></button>
+                
+            </div>
+
+            <script type="module" src="./assets/js/bgcanvas.js"></script>
+            <script type="module" src="./assets/js/fgcanvas.js"></script>
+            <script src="./assets/js/tilt.js"></script>
+            <script type ="module" src="./assets/js/mainjump.js"></script>
+            <script type="module" src=./assets/js/main.js></script>
+            <script src="./assets/js/aos.js"></script>
+            <script> AOS.init() </script>
+</body>
+</html>
